@@ -1,14 +1,3 @@
-/*import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
-
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)*/
-
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
@@ -32,19 +21,19 @@ const router = createBrowserRouter([
         element: <Dashboard />
       }, 
       {
-        path: '/login',
+        path: 'login',
         element: <Login />
       },
       {
-        path: '/teamsRoom',
+        path: 'teamsRoom',
         element: <TeamsRoom />
       },
       {
-        path: '/battleRoom',
+        path: 'battleRoom',
         element: <BattleRoom />
       },
       {
-        path: '/signUp',
+        path: 'signUp',
         element: <SignUp />
       }
     ]
